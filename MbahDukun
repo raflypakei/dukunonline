@@ -1,0 +1,67 @@
+#Author CRTF4bD
+#Recode mandul
+impor  os , waktu
+os . sistem ( 'jelas' )
+
+logo  =  "" "
+\ 33 [31; 1m ============================================ =======
+              \ 33 [31; 1m + - + - + - + - + - + - + - +
+              | R | A | F | L | I | 0 | 2 |
+              + - + - + - + - + - + - + - +
+\ 33 [0; 32mAuthor \ 33 [31; 1m: \ 33 [33; 1mRafly pake i
+\ 33 [0; 32mYoutube \ 33 [31; 1m: \ 33 [33; 1mRafly pake i
+\ 33 [31; 1m ============================================ ======= "" "
+
+menu  =  "" "
+[1] Langsung Santet [+]
+[2] Keluar [+]
+"" "
+let  =  "" "
+\ 33 [33; 1mJika langsung santet tolong tunggu karena ini online, dan tergantung koneksi mu
+"" "
+
+
+cetak ( logo )
+waktu . tidur ( 0,1 )
+cetak ( menu )
+z  =  input ( '| ===]>' )
+if ( z  == '1' ):
+	os . sistem ( 'jelas' )
+	cetak ( logo )
+	waktu . tidur ( 0,1 )
+	cetak ( biarkan )
+elif ( z  == '2' ):
+	cetak ( '\ 33 [0; 36mKeluar!' )
+	waktu . tidur ( 2 )
+	os . sys . keluar ()
+lain :
+	print ( 'Gak ada cok!' )
+	waktu . tidur ( 2 )
+	cetak ( '\ 33 [0; 36mKeluar!' )
+	waktu . tidur ( 1 )
+	os . sys . keluar ()
+
+c  =  input ( '\ 33 [0; 32mMasukan nama lengkap korban \ 33 [31; 1m:' )
+v  =  input ( '\ 33 [0; 32mTinggal di \ 33 [31; 1m:' )
+print ( "\ 33 [33; 1mNama Korban \ 33 [31; 1m:" + c )
+waktu . tidur ( 1 )
+print ( "\ 33 [33; 1mTinggal di \ 33 [31; 1m:" + v )
+bnr  =  input ( 'Apakah Benar? (y / t):' )
+if ( bnr  == 'y' ):
+	cetak ( "\ 33 [0; 36mTunggu ..." )
+	waktu . tidur ( 1 )
+	print ( "\ 33 [0; 36mKorban sedang disantet! ..." )
+	waktu . tidur ( 5 )
+	print ( "\ 33 [0; 36mSelesai Menyantet" )
+	waktu . tidur ( 1 )
+	os . sys . keluar ()
+elif ( bnr  == 't' ):
+	cetak ( '\ 33 [0; 36mKeluar!' )
+	waktu . tidur ( 1 )
+	os . sys . keluar ()
+lain :
+	print ( 'Gak ada cok!' )
+	waktu . tidur ( 2 )
+	cetak ( '\ 33 [0; 36mKeluar!' )
+	waktu . tidur ( 1 )
+	os . sys . keluar () 
